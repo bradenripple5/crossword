@@ -1,9 +1,10 @@
 import numpy as np
-import random,sys,re,copy
+import random,sys,re,copy,json
 np.set_printoptions(linewidth=2000)    # default = 75
 
 with open("wordlist.txt") as f:
 	words = f.read().split("\n")
+	
 commonletters = {}
 for word in words:
 	for letter in word:
